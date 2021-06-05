@@ -17,7 +17,7 @@ module.exports = {
       type: 'category',
       label: 'Modules',
       items: [
-        { type: 'link', label: 'gmsv_myhttp', href: '/gmsv_myhttp' },
+        { type: 'link', label: 'gmsv_myhttp', href: '/gmsv_myhttp/intro' },
       ]
     },
   ],
