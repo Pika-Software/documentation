@@ -1,5 +1,6 @@
 ---
-id: welcome
 slug: /
+title: 'Welcome'
 ---
-Lorem ipsum
+
+Hello World!

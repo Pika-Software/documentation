@@ -81,6 +81,9 @@ module.exports = {
           
           // Docs-only mode
           routeBasePath: '/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+
         },
         blog: false,
         // blog: {
