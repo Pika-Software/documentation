@@ -1,0 +1,1 @@
+(self.webpackChunkpika_soft=self.webpackChunkpika_soft||[]).push([[664],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/pika-docs/blog/welcome"},{"title":"Hello","permalink":"/pika-docs/blog/hello-world"},{"title":"Hola","permalink":"/pika-docs/blog/hola"}]}')}}]);
