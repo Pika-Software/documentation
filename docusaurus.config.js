@@ -10,6 +10,13 @@ module.exports = {
   organizationName: 'Pika-Software', // Usually your GitHub org/user name.
   projectName: 'pika-docs', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/dracula'),
+      defaultLanguage: 'lua',
+      additionalLanguages: [
+        'lua',
+      ]
+    },
     navbar: {
       title: 'Pika Docs',
       logo: {
@@ -22,6 +29,12 @@ module.exports = {
           docId: 'welcome',
           position: 'left',
           label: 'Welcome',
+        },
+        {
+          type: 'doc',
+           docId: 'gmsv_myhttp/intro', 
+           position: 'left',
+           label: 'gmsv_myhttp',
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
