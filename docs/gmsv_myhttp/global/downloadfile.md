@@ -10,10 +10,14 @@ myhttp.DownloadFile(url, fileName, gamePath, callback)
 Function for downloading files via http.
 Allows you to download files of any size.
 
-It can also work synchronously. To do this, just add [`:wait()`](../libs/threading#wait):
+It can also work synchronously. To do this, just add [`:wait()`](../thread/wait):
 ```
 myhttp.DownloadFile(...):wait()
 ```
+
+:::caution
+This function has unlimited access to the file system.
+:::
 
 ### Arguments
 |Name |Type |Description |

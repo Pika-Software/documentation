@@ -1,5 +1,5 @@
 ---
-slug: /gmsv_myhttp
+slug: /gmsv_myhttp/intro
 title: Introduction
 ---
 
@@ -10,8 +10,9 @@ Don't forget to add module loading:
 require('myhttp')
 ```
 
-### Methods
-* [**myhttp.DownloadFile**](/gmsv_myhttp/methods/downloadfile)
+### API list
+* [**Global**](global)
+* [**Thread**](thread)
 
-### Libraries
-* [**Thread**](/gmsv_myhttp/libs/threading)
+### Download
+You can download lastest version of module [**here**](https://github.com/Pika-Software/gmsv_myhttp/releases/latest)
