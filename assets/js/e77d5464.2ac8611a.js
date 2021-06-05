@@ -1,1 +1,0 @@
-(self.webpackChunkpika_soft=self.webpackChunkpika_soft||[]).push([[331],{3028:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/pika-docs/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/pika-docs/blog/tags/facebook"}')}}]);

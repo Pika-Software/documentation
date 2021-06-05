@@ -1,1 +1,0 @@
-(self.webpackChunkpika_soft=self.webpackChunkpika_soft||[]).push([[703],{6589:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/pika-docs/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/pika-docs/blog/tags/hello"}')}}]);
