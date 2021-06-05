@@ -86,6 +86,9 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/pika-software/pika-docs/edit/main/',
+          
+          // Docs-only mode
+          routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
