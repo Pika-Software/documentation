@@ -28,7 +28,7 @@ This function has unlimited access to the file system.
 |*callback*|`function`|The function that will be called when the file is downloaded. Arguments: <ul><li>`bool` **ok** - Has the file downloaded</li><li>`string / nil` **err** - Error description, if `ok == true`, then equals `nil` </li><li>`number` **size** - File size</li></ul>|
 
 ### Returns
-1. Returns [**Thread**](../libs/threading#object-thread) object.
+1. Returns [**Thread**](../thread) object.
 
 ### Example
 Downloads the Firefox browser installer to the `data` folder
