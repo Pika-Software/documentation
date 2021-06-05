@@ -10,7 +10,7 @@ myhttp.DownloadFile(url, fileName, gamePath, callback)
 Function for downloading files via http.
 Allows you to download files of any size.
 
-It can also work synchronously. To do this, just add `:wait()`:
+It can also work synchronously. To do this, just add [`:wait()`](../libs/threading#wait):
 ```
 myhttp.DownloadFile(...):wait()
 ```
@@ -24,7 +24,7 @@ myhttp.DownloadFile(...):wait()
 |*callback*|`function`|The function that will be called when the file is downloaded. Arguments: <ul><li>`bool` **ok** - Has the file downloaded</li><li>`string / nil` **err** - Error description, if `ok == true`, then equals `nil` </li><li>`number` **size** - File size</li></ul>|
 
 ### Returns
-1. Returns [**Thread**](../libs/threading) object.
+1. Returns [**Thread**](../libs/threading#object-thread) object.
 
 ### Example
 Downloads the Firefox browser installer to the `data` folder
