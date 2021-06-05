@@ -2,8 +2,8 @@
 module.exports = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  url: 'https://pika-software.github.io',
-  baseUrl: '/pika-docs/',
+  url: 'https://docs.pika-soft.ru',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
