@@ -5,6 +5,7 @@ title: Welcome
 
 Welcome to **Pika Docs**!
 All docs for our libraries are collected here.
+Good luck finding something here.
 
 :::note
 
