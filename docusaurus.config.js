@@ -36,6 +36,12 @@ module.exports = {
            position: 'left',
            label: 'gmsv_myhttp',
         },
+        {
+          type: 'doc',
+           docId: 'industrial_wars/intro', 
+           position: 'left',
+           label: 'Industrial Wars',
+        },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/pika-software/pika-docs',
