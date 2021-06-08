@@ -1,5 +1,4 @@
 ---
-slug: /gmsv_myhttp/intro
 title: Introduction
 ---
 
