@@ -6,7 +6,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'Pika-Software', // Usually your GitHub org/user name.
   projectName: 'pika-docs', // Usually your repo name.
   themeConfig: {
