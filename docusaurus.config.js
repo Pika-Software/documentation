@@ -17,6 +17,9 @@ module.exports = {
         'lua',
       ]
     },
+    colorMode: {
+      defaultMode: 'dark',
+    },
     navbar: {
       title: 'Pika Docs',
       logo: {
