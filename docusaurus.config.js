@@ -22,10 +22,11 @@ module.exports = {
     },
     navbar: {
       title: 'Pika Docs',
-      logo: {
-        alt: 'Logo',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'Logo',
+      //   src: 'img/logo-light.svg',
+      //   srcDark: 'img/logo-dark.svg'
+      // },
       items: [
         {
           type: 'doc',
