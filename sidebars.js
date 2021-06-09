@@ -20,6 +20,13 @@ module.exports = {
         { type: 'link', label: 'gmsv_myhttp', href: '/gmsv_myhttp/intro' },
       ]
     },
+    {
+      type: 'category',
+      label: 'Dev Docs',
+      items: [
+        { type: 'link', label: 'Industrial Wars', href: '/industrial_wars/intro' },
+      ]
+    },
   ],
 
   gmsv_myhttp: [
