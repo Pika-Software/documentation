@@ -89,7 +89,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Pika Software Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Pika Software`, //  Inc. Built with Docusaurus. // Да да я именно это сделал
     },
   },
   presets: [
