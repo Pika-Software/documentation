@@ -49,7 +49,7 @@ module.exports = {
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://hub.pika-soft.ru/',
-          label: 'HUB',
+          label: 'Hub',
           position: 'right',
         },
         {
