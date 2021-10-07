@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Pika Docs',
-  tagline: 'Hello :)',
+  tagline: 'Pika Software documentation.',
   url: 'https://docs.pika-soft.ru',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'pika-docs', // Usually your repo name.
   themeConfig: {
     prism: {
-      theme: require('prism-react-renderer/themes/dracula'),
+      theme: require('prism-react-renderer/themes/vsDark'),
       defaultLanguage: 'lua',
       additionalLanguages: [
         'lua',
@@ -19,42 +19,38 @@ module.exports = {
     },
     colorMode: {
       defaultMode: 'dark',
+      disableSwitch: true
     },
+    // algolia: {
+    //   apiKey: 'YOUR_API_KEY',
+    //   indexName: 'YOUR_INDEX_NAME',
+    // },
     navbar: {
       title: 'Pika Docs',
-      // logo: {
-      //   alt: 'Logo',
-      //   src: 'img/logo-light.svg',
-      //   srcDark: 'img/logo-dark.svg'
-      // },
       items: [
         {
           type: 'doc',
           docId: 'welcome',
-          position: 'left',
-          label: 'Welcome',
+          label: 'Home',
         },
         {
           type: 'doc',
-           docId: 'gmsv_myhttp/intro', 
-           position: 'left',
-           label: 'gmsv_myhttp',
+          docId: 'gmsv_myhttp/intro', 
+          label: 'gmsv_myhttp',
         },
         {
           type: 'doc',
            docId: 'industrial_wars/intro', 
-           position: 'left',
            label: 'Industrial Wars',
-        },
-        //{to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://hub.pika-soft.ru/',
-          label: 'Hub',
-          position: 'right',
         },
         {
           href: 'https://github.com/pika-software/pika-docs',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://hub.pika-soft.ru/',
+          label: 'Hub',
           position: 'right',
         },
       ],
@@ -94,7 +90,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Pika Software`, //  Inc. Built with Docusaurus. // Да да я именно это сделал
+      copyright: 'Made with ❤️ by Pika Software', //  Inc. Built with Docusaurus. // Да да я именно это сделал
     },
   },
   presets: [
@@ -103,25 +99,19 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/pika-software/pika-docs/edit/main/',
-          
-          // Docs-only mode
+
           routeBasePath: '/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
 
         },
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/pika-software/pika-docs/edit/main/',
-        // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [
+            require.resolve('./src/css/custom.css')
+          ],
         },
       },
     ],
