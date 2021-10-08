@@ -1,0 +1,38 @@
+---
+title: CreateBundle
+sidebar_label: resource.CreateBundle
+---
+
+import { Function, Realm, Type, LinkType } from '../../../src/components/Function'
+
+<Function>
+    <LinkType type="Bundle" link="bundle"/> resource.CreateBundle( <Type type="string"/> name, <Type type="boolean"/> compress )
+</Function>
+
+## Arguments
+1.  **<Type type="string"/> name**<br/>
+    Unique name of the bundle. Try keep it lowercase and use only valid file symbols.
+
+2.  **<Type type="bool"/> compress**<br/>
+    Whether to enable bundle compression.
+
+## Returns
+1.  **<LinkType type="Bundle" link="bundle"/> bundle**<br/>
+    Returns [**Bundle**](bundle) object
+
+## Examples
+Create global bundle and replace `resource.AddSingleFile` function
+```lua
+-- Create a global bundle
+local bundle = resource.CreateBundle("global-bundle", true)
+
+-- Overwrite the default function
+function resource.AddSingleFile(path)
+    local ok = bundle:Add(path)
+
+    -- If an error occurs, then we will use the internal fastdl
+    if not ok then
+        resource.AddSingleFile(path)
+    end
+end
+```

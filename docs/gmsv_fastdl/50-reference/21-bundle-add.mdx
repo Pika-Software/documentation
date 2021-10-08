@@ -1,0 +1,28 @@
+---
+title: Add
+sidebar_label: Bundle:Add
+---
+
+import { Function, Realm, Type } from '../../../src/components/Function'
+import Link from '@docusaurus/Link'
+
+<Function>
+    <Type type="bool"/> <Link to="bundle">Bundle</Link>:Add( <Type type="string"/> path )
+</Function>
+
+## Arguments
+1.  **<Type type="string"/> path**<br/>
+    Path of the file to be added. Relative to `garrysmod` folder
+
+## Returns
+1.  **<Type type="bool"/> success**<br/>
+    Whether the file was added. false if the file does not exist or an internal error
+
+## Example
+Adding content to the bundle
+```lua
+-- Similiar to resource.AddSingleFile
+bundle:Add('materials/my/material.vmt')
+bundle:Add('models/my/model.mdl')
+bundle:Add('sound/my/sound.wav')
+```
