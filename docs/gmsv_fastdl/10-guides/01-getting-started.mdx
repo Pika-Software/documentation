@@ -1,0 +1,37 @@
+---
+title: Getting started
+---
+
+## Introduction
+To get started with `fastdl` you need to create a bundle with [**CreateBundle**](../reference/createbundle)
+```lua
+local bundle = resource.CreateBundle('my-bundle')
+```
+*Note: Bundle names can be used in file names, so try keep it lowercase and use only valid file symbols*
+
+Now that we have a bundle, we can add files to it
+```lua
+-- Similiar to resource.AddSingleFile
+bundle:Add('materials/my/material.vmt')
+bundle:Add('models/my/model.mdl')
+bundle:Add('sound/my/sound.wav')
+```
+
+And it's all! Almost as simple as the standard fastdl functions!
+
+## I wan't use resource.AddSingleFile
+You can replace default `resource.AddSingleFile` function. Here is snippet
+```lua
+-- Create a global bundle
+local bundle = resource.CreateBundle("global-bundle", true)
+
+-- Overwrite the default function
+function resource.AddSingleFile(path)
+    local ok = bundle:Add(path)
+
+    -- If an error occurs, then we will use the internal fastdl
+    if not ok then
+        resource.AddSingleFile(path)
+    end
+end
+```

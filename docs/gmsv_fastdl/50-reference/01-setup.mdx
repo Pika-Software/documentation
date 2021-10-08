@@ -1,0 +1,35 @@
+---
+title: Setup
+sidebar_label: resource.Setup
+---
+
+import { Function, Realm, Type } from '../../../src/components/Function'
+
+<Function>
+    resource.Setup( <Type type="table"/> settings )
+</Function>
+
+## Description
+Sets the values in the internal config of the module
+
+
+See **[Configuration](../guides/configuration)**
+
+## Arguments
+1.  **<Type type="table"/> settings**<br/>
+    Table with new settings. See **[Configuration](../guides/configuration)** 
+
+## Example
+Changes driver to `custom` and sets maximum size to 10 mb
+```lua
+require('fastdl') -- Don't forget load module
+
+resource.Setup({
+    -- Set driver
+    CurrentDriver = 'custom',
+
+    -- Set maximum size
+    MaximumBundleSize = 1024 * 1024 * 10, -- 10 mb
+    MaximumBundleFileSize = 1024 * 1024 * 10 -- 10 mb
+})
+```

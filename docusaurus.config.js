@@ -35,6 +35,11 @@ module.exports = {
         },
         {
           type: 'doc',
+          docId: 'gmsv_fastdl/intro',
+          label: 'gmsv_fastdl'
+        },
+        {
+          type: 'doc',
           docId: 'gmsv_myhttp/intro', 
           label: 'gmsv_myhttp',
         },

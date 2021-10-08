@@ -18,6 +18,7 @@
 
   --ifm-background-color: #1a1a1a !important;
   --ifm-background-surface-color: #262626 !important;
+  --ifm-table-stripe-background: #1f1f1f !important;
 }
 
 .footer {
@@ -29,4 +30,29 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+/* Realms */
+.realm-client {
+  --realm-background: #dea909;
+}
+
+.realm-server {
+  --realm-background: #03a9f4;
+}
+
+.realm-menu {
+  --realm-background: #4caf50;
+}
+
+.realm-client.realm-server {
+  --realm-background: linear-gradient(45deg, #dea909 53%, #03a9f4 53.001%);
+}
+
+.realm-client.realm-menu {
+  --realm-background: linear-gradient(45deg, #dea909 53%, #4caf50 53.001%);
+}
+
+.realm-client.realm-server.realm-menu {
+  --realm-background: linear-gradient(45deg, #4caf50 35.99%, #dea909 36%, #dea909 63%, #03a9f4 63.01%);
 }

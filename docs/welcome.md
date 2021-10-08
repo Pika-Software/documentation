@@ -18,6 +18,7 @@ Usually **Dev Docs** are not translated as they are written by Pika Software dev
 
 
 ### Modules
+* [**gmsv_fastdl**](/gmsv_fastdl/intro)
 * [**gmsv_myhttp**](/gmsv_myhttp/intro)
 
 ### Dev docs
