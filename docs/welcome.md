@@ -9,7 +9,7 @@ Good luck finding something here.
 
 :::note
 If you notice a typo or missing information in the documentation, we will be glad if you correct us!
-You can always update the documentation in **[Github](https://github.com/Pika-Software/pika-docs)**
+You can always update the documentation in **[Github](https://github.com/Pika-Software/documentation)**
 :::
 
 :::info

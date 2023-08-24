@@ -1,14 +1,14 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Pika Docs',
-  tagline: 'Pika Software documentation.',
+  tagline: 'Pika Software\'s project documentation.',
   url: 'https://docs.pika-soft.ru',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
   organizationName: 'Pika-Software', // Usually your GitHub org/user name.
-  projectName: 'pika-docs', // Usually your repo name.
+  projectName: 'documentation', // Usually your repo name.
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/vsDark'),
@@ -35,27 +35,22 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'gmsv_fastdl/intro',
-          label: 'gmsv_fastdl'
+          docId: 'gpm',
+          label: 'GLua Package Manager'
         },
         {
           type: 'doc',
-          docId: 'gmsv_myhttp/intro', 
-          label: 'gmsv_myhttp',
+          docId: 'modules',
+          label: 'Modules'
         },
         {
-          type: 'doc',
-           docId: 'industrial_wars/intro', 
-           label: 'Industrial Wars',
-        },
-        {
-          href: 'https://github.com/pika-software/pika-docs',
+          href: 'https://github.com/pika-software/documentation',
           label: 'GitHub',
           position: 'right',
         },
         {
-          href: 'https://hub.pika-soft.ru/',
-          label: 'Hub',
+          href: 'https://pika-soft.ru/',
+          label: 'Blog',
           position: 'right',
         },
       ],
@@ -64,7 +59,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentations',
           items: [
             {
               label: 'Welcome',
@@ -77,25 +72,21 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/3UVxhZj',
+              href: 'https://discord.gg/Gzak99XGvv',
             },
           ],
         },
         {
           title: 'More',
           items: [
-            // {
-            //   label: 'Blog',
-            //   to: '/blog',
-            // },
             {
               label: 'GitHub',
-              href: 'https://github.com/pika-software/pika-docs',
+              href: 'https://github.com/pika-software/documentation',
             },
           ],
         },
       ],
-      copyright: 'Made with ❤️ by Pika Software', //  Inc. Built with Docusaurus. // Да да я именно это сделал
+      copyright: 'Made with ❤️ by Pika Software, Inc. Built with Docusaurus.',
     },
   },
   presets: [
@@ -105,7 +96,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/pika-software/pika-docs/edit/main/',
+            'https://github.com/pika-software/documentation/edit/main/',
 
           routeBasePath: '/',
           showLastUpdateAuthor: true,

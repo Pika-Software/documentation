@@ -1,2 +1,2 @@
-# pika-docs
+# Pika Docs
 Our docs!
